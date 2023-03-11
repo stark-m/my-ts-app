@@ -31,4 +31,4 @@ workflows:
   main-workflow:
     jobs:
       - test:
-        context: SonarCloud
+          context: SonarCloud
