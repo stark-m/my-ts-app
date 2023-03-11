@@ -22,7 +22,7 @@ jobs:
       - node/install-packages
       - run:
           name: "npm test"
-          command: "npm test:coverage"
+          command: "npm run test:coverage"
       - sonarcloud/scan
 
 # Invoke jobs via workflows
@@ -31,4 +31,4 @@ workflows:
   main-workflow:
     jobs:
       - build:
-        context: sonarcloud
+      context: sonarcloud
